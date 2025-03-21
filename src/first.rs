@@ -2,17 +2,22 @@ use std::primitive::i32;
 
 struct Node {
     item: i32,
-    next: PList
+    next: Link
 }
 
-enum PList {
+enum Link {
     Empty,
     Occupied(Box<Node>),
 }
 
 pub struct List {
-    link: PList
+    link: Link
 }
 
+impl List {
+    pub fn new() -> Self {
+        List { link: Link::Empty }
+    }
+}
 fn main() {
 }
