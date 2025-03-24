@@ -1,22 +1,30 @@
 use std::primitive::i32;
+use std::mem;
 
 struct Node {
-    item: i32,
+    elem: i32,
     next: Link
 }
 
 enum Link {
     Empty,
-    Occupied(Box<Node>),
+    More(Box<Node>),
 }
 
 pub struct List {
-    link: Link
+    head: Link
 }
 
 impl List {
     pub fn new() -> Self {
-        List { link: Link::Empty }
+        List { head: Link::Empty }
+    }
+    pub fn push(&mut self, el: i32) {
+        let new_node = Box::new(Node {
+            elem: el,
+            next: mem::replace(&mut self.head, Link::Empty)
+        });
+        self.head = Link::More(new_node);
     }
 }
 fn main() {

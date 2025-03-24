@@ -1,1 +1,1 @@
-https://rust-unofficial.github.io/too-many-lists/first-push.html
+https://rust-unofficial.github.io/too-many-lists/first-pop.html
