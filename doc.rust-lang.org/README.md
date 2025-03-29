@@ -1,3 +1,3 @@
-https://doc.rust-lang.org/rust-by-example/primitives/literals.html
+https://doc.rust-lang.org/rust-by-example/hello/comment.html
 
 `cargo new --lib t2`
