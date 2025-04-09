@@ -1,3 +1,3 @@
-https://doc.rust-lang.org/rust-by-example/hello/print/print_display/testcase_list.html
+https://doc.rust-lang.org/rust-by-example/primitives/array.html
 
 `cargo new --lib t2`
